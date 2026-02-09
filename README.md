@@ -29,6 +29,15 @@ Type or paste text, press Enter twice. You'll get the corrected version and can:
 echo "This is an test." | python3 grammar_checker.py
 ```
 
+## Chrome Extension
+
+A Chrome extension is in the `extension/` folder. Load it unpacked, add your API key in options, then:
+- Select text on any page
+- Press **Ctrl+Shift+G** (or **Cmd+Shift+G** on Mac)
+- Accept, reject, or fine-tune the correction
+
+See `extension/README.md` for setup.
+
 ## Optional
 
 Set a custom model in `.env`:

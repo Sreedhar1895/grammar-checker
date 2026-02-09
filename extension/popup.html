@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 280px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+    }
+    .status { font-weight: 600; margin-bottom: 8px; }
+    .ready { color: #0d9488; }
+    .not-set { color: #dc2626; }
+    p { margin: 0 0 12px; color: #666; line-height: 1.4; }
+    button {
+      padding: 8px 16px;
+      background: #0d9488;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div id="status" class="status"></div>
+  <p id="instructions"></p>
+  <p id="howto" style="font-size:12px; color:#888; margin-top:8px;">Right-click selected text → "Check grammar"</p>
+  <button id="optionsBtn" style="display:none">Set API Key</button>
+  <button id="changeKeyBtn" style="display:none; margin-top:8px; background:#444">Change Key</button>
+  <script src="popup.js"></script>
+</body>
+</html>
