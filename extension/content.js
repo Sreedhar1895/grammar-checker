@@ -131,7 +131,8 @@ function createPopup(originalText) {
       resultEl.style.display = "block";
       actionsEl.style.display = "flex";
 
-      grammarPopup.querySelector(".gc-accept").onclick = () => acceptCorrection(response);
+      grammarPopup.querySelector(".gc-accept").onclick = () =>
+        acceptCorrection(grammarPopup.dataset.correctedText);
       grammarPopup.querySelector(".gc-reject").onclick = () => removePopup();
       grammarPopup.querySelector(".gc-finetune").onclick = () => showFinetuneInput();
     }
